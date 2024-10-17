@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 96%; /* #f9f8f7 */
+    --foreground: 25 15% 14%; /* #2e2621 */
+    --card: 0 0% 87%; /* #ddd2cc */
+    --card-foreground: 25 15% 14%; /* #2e2621 */
+    --popover: 0 0% 87%; /* #ddd2cc */
+    --popover-foreground: 25 15% 14%; /* #2e2621 */
+    --primary: 25 15% 14%; /* #2e2621 */
+    --primary-foreground: 0 0% 98%; /* #f9f8f7 */
+    --secondary: 0 0% 87%; /* #ddd2cc */
+    --secondary-foreground: 25 15% 14%; /* #2e2621 */
+    --muted: 0 0% 87%; /* #ddd2cc */
+    --muted-foreground: 25 10% 45%; /* Adoucissement pour contraste */
+    --accent: 136 17% 75%; /* #a3b5a7 (vert doux) */
+    --accent-foreground: 25 15% 14%; /* #2e2621 */
+    --destructive: 0 84.2% 60.2%; /* Rouge vif pour les actions destructrices */
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 85%; /* Légère teinte pour les bordures */
+    --input: 0 0% 87%; /* Couleur des champs de saisie */
+    --ring: 0 0% 14%; /* Accentuation sombre pour les éléments en focus */
+    --chart-1: 12 76% 61%; /* Restes pour les graphiques */
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 25 15% 14%; /* #2e2621 */
+    --foreground: 0 0% 96%; /* #f9f8f7 */
+    --card: 25 15% 14%; /* #2e2621 */
+    --card-foreground: 0 0% 96%; /* #f9f8f7 */
+    --popover: 25 15% 14%; /* #2e2621 */
+    --popover-foreground: 0 0% 96%; /* #f9f8f7 */
+    --primary: 0 0% 98%; /* #f9f8f7 */
+    --primary-foreground: 25 15% 14%; /* #2e2621 */
+    --secondary: 0 0% 87%; /* #ddd2cc */
+    --secondary-foreground: 0 0% 96%; /* #f9f8f7 */
+    --muted: 25 15% 20%; /* Légèrement adouci pour fond */
+    --muted-foreground: 0 0% 87%;
+    --accent: 136 17% 75%; /* #a3b5a7 (vert doux) */
+    --accent-foreground: 0 0% 96%; /* #f9f8f7 */
+    --destructive: 0 62.8% 30.6%; /* Rouge foncé */
+    --destructive-foreground: 0 0% 96%; /* Blanc cassé */
+    --border: 25 15% 25%; /* Plus sombre pour contrastes de bordures */
+    --input: 25 15% 20%; /* Fond sombre pour les champs de saisie */
+    --ring: 136 17% 40%; /* Vert doux pour focus */
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Styles de la barre de défilement */
+  /* Pour Chrome, Edge, Safari */
+  ::-webkit-scrollbar {
+    width: 14px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(8, 42%, 47%);
+    border-radius: var(--radius);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--secondary));
+  }
+
+  html {
+    /* Pour Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: hsl(8, 42%, 47%) hsl(var(--background));
+  }
+}
