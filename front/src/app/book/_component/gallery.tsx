@@ -83,6 +83,7 @@ export default function Gallery() {
                   <SelectItem value="professionnel">Professionnel</SelectItem>
                   <SelectItem value="couple">Couple</SelectItem>
                   <SelectItem value="famille">Famille</SelectItem>
+                  <SelectItem value="born">Naissance</SelectItem>
                 </SelectContent>
               </Select>
               <Pagination className="my-10">

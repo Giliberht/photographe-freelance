@@ -280,6 +280,20 @@ const imageGallery: imageGalleryData[] = [
     width: 1280,
     height: 851,
   },
+  {
+    src: "/img/naissance/born1.jpg",
+    alt: "Description de la photo 1",
+    cat: ["born"],
+    width: 1280,
+    height: 851,
+  },
+  {
+    src: "/img/naissance/born2.jpg",
+    alt: "Description de la photo 2",
+    cat: ["born"],
+    width: 1280,
+    height: 851,
+  },
 ];
 
 export default imageGallery;

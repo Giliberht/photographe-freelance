@@ -76,7 +76,7 @@ const seances: SeanceData[] = [
       "Capturer les premiers moments de vie de votre nouveau-né avec douceur et tendresse. Une séance intime pour créer des souvenirs précieux à partager en famille.",
     price: "À partir de 350€.",
     duration: "Environ 2 heures.",
-    images: ["/img/naissance/naissance1.jpg", "/img/naissance/naissance2.jpg"],
+    images: ["/img/naissance/born1.jpg", "/img/naissance/born2.jpg"],
     cat: ["naissance"],
   },
 ];
