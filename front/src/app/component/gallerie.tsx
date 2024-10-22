@@ -35,13 +35,12 @@ const images = [
 export const Gallery = () => {
   return (
     <Section className="flex flex-col items-center justify-center gap-10">
-      <div className="mb-5 text-center">
+      <div className="mb-5 text-center max-sm:px-5">
         <Badge variant={"outline"} className="mb-2">
-          Services
+          Book
         </Badge>
         <h1 className="scroll-m-20 border-b pb-2 text-4xl tracking-tight">
-          De l&apos;amour, celui que l&apos;on se porte et celui que l&apos;on
-          donne.
+          Des souvenirs précieux, capturés avec amour
         </h1>
       </div>
 
@@ -75,7 +74,7 @@ export const Gallery = () => {
       <div className="mt-5">
         <Link href="/gallery">
           <button className="group border-[#aa5949] bg-[#aa5949] text-[#f9f8f7] px-6 py-2 font-semibold rounded-sm hover:bg-[#aa4c4c] transition duration-300 flex items-center shadow-md">
-            Voir toute la galerie
+            Explorez la galerie
             <FontAwesomeIcon
               icon={faChevronRight}
               className="ml-2 text-sm transition-transform duration-300 group-hover:translate-x-2"

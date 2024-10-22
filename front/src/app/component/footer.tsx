@@ -1,9 +1,13 @@
+import { FacebookIcon } from "./icon/facebookIcon";
+import { InstaIcon } from "./icon/instaIcon";
+import { LinkedinIcon } from "./icon/linkedinicon";
+import { TiktokIcon } from "./icon/tiktokIcon";
 import { Section } from "./section";
 import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <footer className="flex justify-center bottom-0 bg-gray-100  py-6">
+    <footer className="flex justify-center bottom-0 bg-gray-100 pt-8 pb-6">
       <Section className="flex-col w-full max-w-6xl">
         <div className="flex flex-col sm:flex-row gap-6 items-center justify-between mb-6">
           <Link href="/" className="flex items-center justify-between gap-4">
@@ -11,6 +15,40 @@ export const Footer = () => {
               Jade Bailly · Photographe
             </p>
           </Link>
+          <div className="flex gap-3 ml-3">
+            <Link
+              target="_blank"
+              href="https://www.linkedin.com"
+              className="hover:scale-110 transition-transform duration-300"
+              aria-label="LinkedIn Logo"
+            >
+              <LinkedinIcon size={30} id="linkedin" />
+            </Link>
+            <Link
+              target="_blank"
+              href="https://facebook.com"
+              className="hover:scale-110 transition-transform duration-300"
+              aria-label="LinkedIn Logo"
+            >
+              <FacebookIcon size={30} id="facebook" />
+            </Link>
+            <Link
+              target="_blank"
+              href="https://instagram.com"
+              className="hover:scale-110 transition-transform duration-300"
+              aria-label="LinkedIn Logo"
+            >
+              <InstaIcon size={30} id="instagram" />
+            </Link>
+            <Link
+              target="_blank"
+              href="https://tiktok.com"
+              className="hover:scale-110 transition-transform duration-300"
+              aria-label="Tiktok Logo"
+            >
+              <TiktokIcon size={30} id="tiktok" />
+            </Link>
+          </div>
           <div className="flex text-sm flex-row items-center gap-8">
             <Link
               href="/mention-legale"

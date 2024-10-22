@@ -26,8 +26,8 @@ body {
     --secondary-foreground: 25 15% 14%; /* #2e2621 */
     --muted: 0 0% 87%; /* #ddd2cc */
     --muted-foreground: 25 10% 45%; /* Adoucissement pour contraste */
-    --accent: 136 17% 75%; /* #a3b5a7 (vert doux) */
-    --accent-foreground: 25 15% 14%; /* #2e2621 */
+    --accent: 10, 40%, 48%; /* #aa5949 */
+    --accent-foreground: 0 0% 98%; /* #f9f8f7 */
     --destructive: 0 84.2% 60.2%; /* Rouge vif pour les actions destructrices */
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 85%; /* Légère teinte pour les bordures */

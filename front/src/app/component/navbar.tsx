@@ -6,43 +6,17 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 export const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const [scrolling, setScrolling] = useState(false); // État pour gérer l'ombre
+  const [scrolling, setScrolling] = useState(false);
 
-  interface Navlink {
-    id: number;
-    link: string;
-    title: string;
-  }
-
-  const Navlinks: Navlink[] = [
-    {
-      id: 2,
-      link: "/about",
-      title: "Qui suis-je ?",
-    },
-    {
-      id: 3,
-      link: "/portfolio",
-      title: "Mon travail",
-    },
-    {
-      id: 4,
-      link: "/services",
-      title: "Mes services",
-    },
-    {
-      id: 5,
-      link: "/contact",
-      title: "Me contacter",
-    },
+  const Navlinks = [
+    { id: 2, link: "/about", title: "Qui suis-je ?" },
+    { id: 3, link: "/book", title: "Mon travail" },
+    { id: 4, link: "/prestation", title: "Mes services" },
+    { id: 5, link: "/contact", title: "Me contacter" },
   ];
 
   const handleScroll = () => {
-    if (window.scrollY > 50) {
-      setScrolling(true);
-    } else {
-      setScrolling(false);
-    }
+    setScrolling(window.scrollY > 50);
   };
 
   useEffect(() => {
@@ -52,32 +26,33 @@ export const Navbar = () => {
     };
   }, []);
 
+  const handleLinkClick = () => {
+    setNav(false);
+  };
+
   return (
     <nav
-      className={`fixed top-0 right-0 left-0 z-100 w-full px-5 py-3 bg-[#f9f8f7] transition-shadow duration-300 ${
+      className={`fixed top-0 right-0 left-0 z-100 w-full px-5 py-4 bg-[#f9f8f7] transition-shadow duration-300 ${
         scrolling ? "shadow-lg" : ""
       }`}
     >
       <div className="flex flex-wrap items-center justify-between mx-auto p-3 py-2 max-w-6xl">
-        <div>
-          <h1 className="text-2xl font-mono ml-2 flex flex-col">
-            <a
-              className="link-underline link-underline-black"
-              href="/"
-              rel="noreferrer"
-            >
-              Jade Bailly
-            </a>
-          </h1>
-        </div>
+        <h1 className="text-2xl font-mono ml-2 flex flex-col">
+          <Link href="/" className="link-underline link-underline-black">
+            Jade Bailly
+          </Link>
+        </h1>
         <div className="flex gap-6">
           <ul className="hidden md:flex">
             {Navlinks.map((item) => (
-              <li
-                key={item.id}
-                className="nav-links px-4 cursor-pointer capitalize font-medium text-primary hover:text-muted-foreground duration-200 link-underline"
-              >
-                <Link href={item.link}>{item.title}</Link>
+              <li key={item.id}>
+                <Link
+                  href={item.link}
+                  className="nav-links px-4 cursor-pointer font-semibold text-primary hover:text-[#aa4c4c] focus:text-[#aa4c4c] duration-200 link-underline"
+                  onClick={handleLinkClick}
+                >
+                  {item.title}
+                </Link>
               </li>
             ))}
           </ul>
@@ -88,20 +63,30 @@ export const Navbar = () => {
             {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
           </div>
           {nav && (
-            <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-[#f9f8f7] text-primary">
+            <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-[#f9f8f7] text-primary pr-5">
               {Navlinks.map((item) => (
                 <li
                   key={item.id}
                   className="nav-links px-4 cursor-pointer capitalize py-6 text-4xl"
                 >
-                  <Link href={item.link}>{item.title}</Link>
+                  <Link href={item.link} onClick={handleLinkClick}>
+                    {item.title}
+                  </Link>
                 </li>
               ))}
+              <Link href="/gallery" legacyBehavior>
+                <button
+                  className="text-2xl mt-4 border-[#aa5949] bg-[#aa5949] text-[#f9f8f7] px-8 py-2 font-semibold rounded-sm hover:bg-[#aa4c4c] transition duration-300"
+                  onClick={handleLinkClick}
+                >
+                  Espace client
+                </button>
+              </Link>
             </ul>
           )}
         </div>
-        <Link href="/gallery" legacyBehavior>
-          <button className="border-[#aa5949] bg-[#aa5949] text-[#f9f8f7] px-6 py-1 font-semibold rounded-sm hover:bg-[#aa4c4c] transition duration-300">
+        <Link href="/espace-client" legacyBehavior>
+          <button className="hidden sm:block border-[#aa5949] bg-[#aa5949] text-[#f9f8f7] px-6 py-1 font-semibold rounded-sm hover:bg-[#aa4c4c] transition duration-300">
             Espace client
           </button>
         </Link>
