@@ -19,8 +19,8 @@ const Reviews: React.FC = () => {
         <h2 className="scroll-m-20 pb-2 text-3xl text-center font-semibold tracking-tight">
           Témoignages des clients
         </h2>
-        <hr className="w-[315px] mb-14" />
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <hr className="w-[315px] max-sm:w-[300px] mb-14" />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-sm:px-5">
           {reviews.slice(5, 8).map((review, index) => (
             <div
               key={index}

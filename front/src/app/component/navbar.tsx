@@ -74,7 +74,7 @@ export const Navbar = () => {
                   </Link>
                 </li>
               ))}
-              <Link href="/gallery" legacyBehavior>
+              <Link href="/espace-client" legacyBehavior>
                 <button
                   className="text-2xl mt-4 border-[#aa5949] bg-[#aa5949] text-[#f9f8f7] px-8 py-2 font-semibold rounded-sm hover:bg-[#aa4c4c] transition duration-300"
                   onClick={handleLinkClick}

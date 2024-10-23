@@ -18,13 +18,14 @@ import {
 export const Service = () => {
   return (
     <Section className="flex flex-col items-center justify-center gap-8 py-10">
-      <div className="mb-5 text-center mt-8 max-sm:px-5">
+      <div className="mb-5 flex flex-col items-center text-center mt-8 max-sm:px-5">
         <Badge variant={"outline"} className="mb-2">
           Services
         </Badge>
-        <h1 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+        <h1 className="scroll-m-20pb-2 text-3xl font-semibold tracking-tight first:mt-0">
           Photographie sur mesure pour chaque occasion
         </h1>
+        <hr className="w-[620px] max-sm:w-[325px] mt-4" />
       </div>
       <p className="max-sm:px-5 text-center">
         Que ce soit pour un mariage, une séance en famille ou un événement

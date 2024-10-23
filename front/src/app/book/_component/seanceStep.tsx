@@ -12,7 +12,7 @@ const ProcessusSeance = () => {
         <h2 className="scroll-m-20 pb-2 text-3xl text-center font-semibold tracking-tight">
           Comment se déroule une séance ?
         </h2>
-        <hr className="w-[360px] mb-14" />
+        <hr className="w-[360px] max-sm:w-[320px]  mb-14" />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20">
           {steps.map((step, index) => (
             <div

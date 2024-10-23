@@ -33,6 +33,7 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function Services() {
   const rowsPerPage = 6;
+  const rowsPerPageSm = 4;
   const [startIndex, setStartIndex] = useState(0);
   const [categoryFilter, setCategoryFilter] = useState("tous");
 
@@ -44,7 +45,7 @@ export default function Services() {
 
   return (
     <Section className="max-w-6xl">
-      <Breadcrumb>
+      <Breadcrumb className="max-sm:ml-5">
         <BreadcrumbList>
           <BreadcrumbItem>
             <BreadcrumbLink href="/">Accueil</BreadcrumbLink>
@@ -65,7 +66,7 @@ export default function Services() {
         <hr className="w-[350px] mb-10" />
 
         <div className="flex flex-col items-center">
-          <div className="grid grid-cols-3 mb-4 gap-8 items-center">
+          <div className="grid grid-cols-3 mb-4 gap-8 items-center max-sm:flex max-sm:flex-col max-sm:gap-1 max-sm:mt-6">
             <Select
               onValueChange={(value) => setCategoryFilter(value)}
               aria-label="Catégorie filter"
@@ -108,9 +109,42 @@ export default function Services() {
               </PaginationContent>
             </Pagination>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-sm:hidden">
             {filteredservices
               .slice(startIndex, startIndex + rowsPerPage)
+              .map((service, index) => (
+                <div
+                  key={index}
+                  className="bg-white shadow-md rounded-lg border border-black/10 hover:shadow-lg p-4 flex flex-col items-start"
+                >
+                  <h4 className="text-xl font-semibold mb-2">
+                    {service.title}
+                  </h4>
+                  <p className="text-sm leading-relaxed mb-2">
+                    {service.description}
+                  </p>
+                  <span className="text-sm font-semibold">{service.price}</span>
+                  <span className="text-sm text-gray-500">
+                    {service.duration}
+                  </span>
+                  <div className="flex mt-4 space-x-2">
+                    {service.images.map((image, imgIndex) => (
+                      <Image
+                        key={imgIndex}
+                        src={image}
+                        alt={service.title}
+                        width={150}
+                        height={100}
+                        className="rounded-md object-cover"
+                      />
+                    ))}
+                  </div>
+                </div>
+              ))}
+          </div>
+          <div className="hidden max-sm:items-center max-sm:flex max-sm:flex-col gap-6 px-5">
+            {filteredservices
+              .slice(startIndex, startIndex + rowsPerPageSm)
               .map((service, index) => (
                 <div
                   key={index}

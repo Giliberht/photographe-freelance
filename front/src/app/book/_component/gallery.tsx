@@ -30,6 +30,7 @@ import {
 
 export default function Gallery() {
   const rowsPerPage = 9;
+  const rowsPerPageSm = 4;
   const [startIndex, setStartIndex] = useState(0);
   const [categoryFilter, setCategoryFilter] = useState("tous");
 
@@ -46,7 +47,7 @@ export default function Gallery() {
 
   return (
     <Section className="max-w-6xl">
-      <Breadcrumb>
+      <Breadcrumb className="max-sm:ml-5">
         <BreadcrumbList>
           <BreadcrumbItem>
             <BreadcrumbLink href="/">Accueil</BreadcrumbLink>
@@ -67,7 +68,7 @@ export default function Gallery() {
           </h2>
           <hr className="w-[200px]" />
           <div className="mt-8">
-            <div className="grid grid-cols-3 mb-4 gap-8 items-center">
+            <div className="grid grid-cols-3 mb-4 gap-8 items-center max-sm:flex max-sm:flex-col max-sm:gap-1 max-sm:mt-6">
               <Select
                 onValueChange={handleCategoryChange}
                 aria-label="Catégorie filter"
@@ -111,10 +112,33 @@ export default function Gallery() {
                 </PaginationContent>
               </Pagination>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-sm:hidden gap-6">
               {/* Affichage des images filtrées et paginées */}
               {filteredGallery
                 .slice(startIndex, startIndex + rowsPerPage)
+                .map((image, index) => (
+                  <div
+                    key={index}
+                    className="relative group overflow-hidden rounded-lg shadow-md w-[350px] h-[200px]"
+                  >
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      layout="responsive"
+                      width={image.width}
+                      height={image.height}
+                      className="object-cover transform transition-transform duration-300 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-30 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center justify-center">
+                      <p className="text-white text-lg">{image.alt}</p>
+                    </div>
+                  </div>
+                ))}
+            </div>
+            <div className="hidden max-sm:items-center max-sm:flex max-sm:flex-col gap-6 ">
+              {/* Affichage des images filtrées et paginées pour le mobile */}
+              {filteredGallery
+                .slice(startIndex, startIndex + rowsPerPageSm)
                 .map((image, index) => (
                   <div
                     key={index}

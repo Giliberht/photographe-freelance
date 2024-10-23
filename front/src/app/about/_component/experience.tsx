@@ -25,7 +25,7 @@ export default function Experience() {
           <h2 className="scroll-m-20 pb-2 text-3xl text-center font-semibold tracking-tight">
             Mon expertise et mes valeurs ajoutées
           </h2>
-          <hr className="w-[500px] mb-14" />
+          <hr className="w-[500px] max-sm:w-[375px] mb-14" />
           <div className="">
             <div className="mb-8">
               <p className="text-md leading-relaxed">
@@ -38,7 +38,7 @@ export default function Experience() {
                 mémorable.
               </p>
             </div>
-            <div className="w-full">
+            <div className="w-full max-sm:px-3">
               <h3 className="text-2xl font-semibold mb-4">
                 Pourquoi choisir mes services :
               </h3>

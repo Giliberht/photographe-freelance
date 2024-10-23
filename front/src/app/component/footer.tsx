@@ -49,7 +49,7 @@ export const Footer = () => {
               <TiktokIcon size={30} id="tiktok" />
             </Link>
           </div>
-          <div className="flex text-sm flex-row items-center gap-8">
+          <div className="flex text-sm flex-row items-center gap-8 max-sm:px-0.5">
             <Link
               href="/mention-legale"
               className="text-primary/85 transition-colors duration-300"

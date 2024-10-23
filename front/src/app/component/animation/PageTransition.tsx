@@ -11,11 +11,19 @@ interface PageTransitionProps {
 const pageVariants = {
   initial: {
     filter: "blur(10px)",
-    clipPath: "inset(0% 100% 0% 0%)",
+    x: "100vw",
     opacity: 0,
   },
-  in: { filter: "blur(0px)", clipPath: "inset(0%)", opacity: 1 },
-  out: { filter: "blur(10px)", clipPath: "inset(0% 100% 0% 0%)", opacity: 0 },
+  in: {
+    filter: "blur(0px)",
+    x: 0,
+    opacity: 1,
+  },
+  out: {
+    filter: "blur(10px)",
+    x: "-100vw",
+    opacity: 0,
+  },
 };
 
 export const PageTransition: React.FC<PageTransitionProps> = ({ children }) => {

@@ -17,13 +17,13 @@ const CTA = () => {
         <h2 className="scroll-m-20 pb-2 text-3xl text-center font-semibold tracking-tight">
           Prêt à capturer vos moments précieux ?
         </h2>
-        <hr className="w-[500px] mb-14" />
+        <hr className="w-[500px] max-sm:w-[380px] mb-14" />
         <p className="text-lg mb-8">
           Que ce soit pour un mariage, un événement spécial ou une séance
           personnelle, je suis là pour immortaliser vos moments. Prenez contact
           dès maintenant !
         </p>
-        <div className="flex justify-center gap-6">
+        <div className="flex justify-center gap-6 max-sm:flex-col">
           <Link href="/contact">
             <button className="flex items-center bg-[#ffffff] text-[#aa5949] border-2 border-[#aa5949] px-6 py-1 rounded-md shadow-lg hover:bg-[#aa4c4c] hover:text-[#ffffff] transition duration-300">
               Réserver une séance

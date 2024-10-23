@@ -16,7 +16,7 @@ export default function TrustNotes() {
         <h2 className="scroll-m-20 pb-2 text-3xl text-center font-semibold tracking-tight">
           Mes engagement & votre sécurité
         </h2>
-        <hr className="w-[440px] mb-14" />
+        <hr className="w-[440px] max-sm:w-[330px] mb-14" />
         <p className="mb-8">
           Je m&apos;engage à vous fournir un service photographique
           exceptionnel, adapté à vos besoins et à vos attentes.
@@ -51,7 +51,7 @@ export default function TrustNotes() {
           >
             les politique de cookies
           </a>
-          &ensp;pour plus d'informations.
+          &ensp;pour plus d&apos;informations.
         </p>
       </div>
     </Section>

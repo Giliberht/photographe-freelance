@@ -19,7 +19,7 @@ import { TiktokIcon } from "../../component/icon/tiktokIcon";
 export default function Profil() {
   return (
     <Section className="max-w-6xl">
-      <Breadcrumb>
+      <Breadcrumb className="max-sm:ml-5">
         <BreadcrumbList>
           <BreadcrumbItem>
             <BreadcrumbLink href="/">Accueil</BreadcrumbLink>
@@ -32,14 +32,14 @@ export default function Profil() {
       </Breadcrumb>
       <div className="flex flex-col items-center max-w-6xl mx-auto mt-20">
         <div className="w-full flex flex-col md:flex-row items-start gap-10 mb-12 mt-5">
-          <div className="mr-10">
+          <div className="mr-10 max-sm:hidden">
             <Image
               src={myface}
               className="object-cover rounded-lg shadow-lg h-[400px] w-[300px]"
               alt="Photographe portrait"
             />
           </div>
-          <div className="flex flex-col items-start justify-center md:w-2/3">
+          <div className="flex flex-col max-sm:items-center items-start justify-center md:w-2/3 max-sm:px-5">
             <Badge variant="outline" className="mb-4">
               About me
             </Badge>
@@ -47,6 +47,13 @@ export default function Profil() {
               Qui suis-je ?
             </h1>
             <hr className="w-[150px]" />
+            <div className="max-sm:flex max-sm:mt-10 hidden">
+              <Image
+                src={myface}
+                className="object-cover rounded-lg shadow-lg h-[400px] w-[400px]"
+                alt="Photographe portrait"
+              />
+            </div>
             <p className="text-md mt-6">
               Je m&apos;appelle Jade Bailly, photographe passionnée basée à
               Example. Depuis mon plus jeune âge, l&apos;art de capturer des
@@ -65,30 +72,30 @@ export default function Profil() {
               <p className="text-md mb-4">
                 Suivez mon travail et rejoignez ma communauté :
               </p>
-              <div className="flex space-x-4">
+              <div className="flex space-x-4 max-sm:mt-4 max-sm:justify-center">
                 <Link
                   href="https://www.instagram.com/yourprofile"
                   target="_blank"
                 >
-                  <InstaIcon className="h-8 w-8" />
+                  <InstaIcon className="h-8 w-8 max-sm:h-[48px] max-sm:w-[48px]" />
                 </Link>
                 <Link
                   href="https://www.facebook.com/yourprofile"
                   target="_blank"
                 >
-                  <FacebookIcon className="h-8 w-8" />
+                  <FacebookIcon className="h-8 w-8 max-sm:h-[48px] max-sm:w-[48px]" />
                 </Link>
                 <Link
                   href="https://www.linkedin.com/in/yourprofile"
                   target="_blank"
                 >
-                  <LinkedinIcon className="h-8 w-8" />
+                  <LinkedinIcon className="h-8 w-8 max-sm:h-[48px] max-sm:w-[48px]" />
                 </Link>
                 <Link
                   href="https://www.tiktok.com/@yourprofile"
                   target="_blank"
                 >
-                  <TiktokIcon className="h-8 w-8" />
+                  <TiktokIcon className="h-8 w-8 max-sm:h-[48px] max-sm:w-[48px]" />
                 </Link>
               </div>
             </div>

@@ -39,7 +39,7 @@ export default function Vision() {
           <h2 className="scroll-m-20 pb-2 text-3xl text-center font-semibold tracking-tight text-gray-900">
             Mon style, ma vision, mes valeurs
           </h2>
-          <hr className="w-[425px] mb-14" />
+          <hr className="w-[425px] max-sm:w-[340px] mb-14" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {services.map((service, index) => (
@@ -53,8 +53,20 @@ export default function Vision() {
                 <p className="text-md leading-relaxed text-gray-600">
                   {service.description}
                 </p>
-                <div className="flex mt-5 space-x-2 gap-x-3 justify-between">
+                <div className="max-sm:hidden flex mt-5 space-x-2 gap-x-3 justify-between">
                   {service.images.map((image, imgIndex) => (
+                    <Image
+                      key={imgIndex}
+                      src={image}
+                      alt={service.title}
+                      width={160}
+                      height={100}
+                      className="rounded-md object-cover"
+                    />
+                  ))}
+                </div>
+                <div className="hidden max-sm:flex mt-5 space-x-2 gap-x-3 justify-between">
+                  {service.images.slice(0, 2).map((image, imgIndex) => (
                     <Image
                       key={imgIndex}
                       src={image}

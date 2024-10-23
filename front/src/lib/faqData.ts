@@ -5,11 +5,6 @@ export interface FaqsData {
 
 const faqs: FaqsData[] = [
   {
-    question: "Quels types de séances photographiques proposez-vous ?",
-    answer:
-      "Je propose une variété de séances, y compris des photographies de mariage, des portraits, des séances lifestyle, des événements d'entreprise, des photographies de produits, ainsi que des séances de grossesse et de naissance.",
-  },
-  {
     question: "Quel est le prix d'une séance photo ?",
     answer:
       "Les tarifs commencent à partir de 150 € pour une séance portrait d'une heure. Pour les mariages, les tarifs débutent à 1200 € pour une couverture de la journée complète (préparatifs, cérémonie, réception). Chaque séance inclut un nombre défini de photos retouchées, avec des options supplémentaires disponibles.",
@@ -39,11 +34,6 @@ const faqs: FaqsData[] = [
       "Que se passe-t-il en cas de mauvais temps le jour de la séance ?",
     answer:
       "Si les conditions météorologiques ne permettent pas de réaliser la séance en extérieur, nous pouvons reprogrammer à une date ultérieure sans frais supplémentaires, ou choisir un lieu en intérieur comme un studio ou une salle.",
-  },
-  {
-    question: "Quel type de matériel utilisez-vous ?",
-    answer:
-      "J'utilise du matériel professionnel, notamment des appareils photo plein format Canon et Nikon avec une sélection d'objectifs de haute qualité pour garantir des résultats nets et détaillés. Je dispose également d'éclairages de studio et de drones pour des prises de vue aériennes si nécessaire.",
   },
   {
     question: "Combien de photos vais-je recevoir après la séance ?",

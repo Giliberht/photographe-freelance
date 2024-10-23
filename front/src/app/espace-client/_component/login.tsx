@@ -48,7 +48,7 @@ const Login = () => {
         <h2 className="scroll-m-20 pb-2 text-3xl text-center font-semibold tracking-tight">
           Connexion à votre espace client
         </h2>
-        <hr className="w-[400px] mb-14" />
+        <hr className="w-[400px] max-sm:w-[330px] mb-14" />
         <div className="bg-white w-[400px] items-start py-8 rounded-lg border border-black/10 shadow-md hover:shadow-lg transition-shadow duration-300 relative">
           <h3 className="text-2xl font-semibold mb-3">Bienvenue</h3>
           <p className="text-md text-center mb-8">
