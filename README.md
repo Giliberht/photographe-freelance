@@ -16,7 +16,7 @@ La future gestion côté serveur sera assurée par **l’API Router de Next.js**
 
 ## 🚀 Démo
 
-👉 [Accéder à la démo en ligne sur Vercel](https://photographe-freelance-2c8y32usk-victors-projects-35e28980.vercel.app/)
+👉 [Accéder à la démo en ligne sur Vercel](https://photographe-freelance.vercel.app/)
 
 ## 🛠️ Tech Stack
 
@@ -42,7 +42,7 @@ La future gestion côté serveur sera assurée par **l’API Router de Next.js**
 ### 🧩 À venir :
 
 - Espace client privé avec login/logout
-- Upload et visualisation de galeries privées
+- Visualisation de galeries privées
 - Intégration d'une base de données clients via Prisma
 - Authentification sécurisée via NextAuth.js
 
