@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📸 Portfolio Photographe Freelance avec Espace Client (Next.js)
 
-## Getting Started
+Un site web moderne et responsive pour photographe freelance, conçu pour offrir une vitrine élégante de son travail et accueillir à terme un espace client sécurisé.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🧾 Description
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Basé sur **Next.js** et **Tailwind CSS**, ce site utilise **JavaScript** et **TypeScript** pour offrir une interface fluide, intuitive et esthétique aux visiteurs et aux clients d’un photographe.  
+La future gestion côté serveur sera assurée par **l’API Router de Next.js**, avec :
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Prisma** pour la gestion de la base de données clients
+- **NextAuth.js** pour l’authentification sécurisée des clients
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🚀 Démo
 
-To learn more about Next.js, take a look at the following resources:
+👉 [Accéder à la démo en ligne sur Vercel](https://lien.vercel.app)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- ⚛️ React
+- ⚛️ Next.js
+- 💅 Tailwind CSS
+- 💻 TypeScript
+- 🌈 Scrollbar personnalisée
+- 🛠️ Prisma (à venir)
+- 🔐 NextAuth.js (à venir)
+- ⚡ Vercel
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚧 Fonctionnalités
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### ✅ Disponibles actuellement :
+
+- Portfolio responsive et moderne
+- Scrollbar personnalisée
+- Architecture propre avec composants modulaires
+
+### 🧩 À venir :
+
+- Espace client privé avec login/logout
+- Upload et visualisation de galeries privées
+- Intégration d'une base de données clients via Prisma
+- Authentification sécurisée via NextAuth.js
+
+---
+
+## 📁 Structure du projet (App Router)
+
+Voici un aperçu de la structure initiale du projet :
+
+---
+
+## 👤 Auteur
+
+Développé par [Gibert Victor](https://www.linkedin.com/in/victor-gibert/)  
+Portfolio : [https://gibertvictor.fr/](https://gibertvictor.fr/)
+
+---
+
+## 📄 Licence
+
+Ce projet est sous licence MIT.  
+Voir le fichier [`LICENSE`](./LICENSE) pour plus de détails.
