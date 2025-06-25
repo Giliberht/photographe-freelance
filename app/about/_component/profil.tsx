@@ -55,9 +55,9 @@ export default function Profil() {
               />
             </div>
             <p className="text-md mt-6">
-              Je m&apos;appelle Jade Bailly, photographe passionnée basée à
-              Example. Depuis mon plus jeune âge, l&apos;art de capturer des
-              instants uniques et authentiques m&apos;a toujours fascinée.
+              Je m&apos;appelle Jade, photographe passionnée basée à Example.
+              Depuis mon plus jeune âge, l&apos;art de capturer des instants
+              uniques et authentiques m&apos;a toujours fascinée.
               Aujourd&apos;hui, j&apos;ai la chance d&apos;accompagner mes
               clients en immortalisant leurs moments précieux et en les
               transformant en souvenirs intemporels. Mon objectif est de créer

@@ -47,7 +47,7 @@ export const Contact = () => {
                 className="text-[#aa4c4c] hover:underline"
                 aria-label="Envoyer un email"
               >
-                jadebailly.photographe@example.com
+                focusparjade.photographe@example.com
               </a>
             </p>
             <p className="text-md">
@@ -69,7 +69,7 @@ export const Contact = () => {
                 rel="noopener noreferrer"
                 aria-label="Voir l'adresse sur Google Maps"
               >
-                82 rue example, 75056 Paris, France
+                82 rue exemple, 75056 Paris, France
               </a>
             </p>
             <div className="mt-2 flex flex-col items-start">

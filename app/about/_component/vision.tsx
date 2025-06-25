@@ -36,7 +36,7 @@ export default function Vision() {
           <Badge variant="outline" className="mb-4">
             My vision
           </Badge>
-          <h2 className="scroll-m-20 pb-2 text-3xl text-center font-semibold tracking-tight text-gray-900">
+          <h2 className="pb-2 text-3xl text-center font-semibold tracking-tight text-gray-900">
             Mon style, ma vision, mes valeurs
           </h2>
           <hr className="w-[425px] max-sm:w-[340px] mb-14" />
@@ -45,7 +45,7 @@ export default function Vision() {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="bg-white shadow-lg max-w-xl rounded-lg p-6 border border-gray-200 hover:shadow-2xl transition-shadow duration-300 focus-within:ring focus-within:ring-[#aa5949]"
+                className="bg-white shadow-md max-w-xl rounded-lg p-6 border border-gray-200 hover:shadow-lg transition-shadow duration-300 focus-within:ring focus-within:ring-[#aa5949]"
               >
                 <h2 className="text-xl font-semibold mb-4 text-gray-800">
                   {service.title}

@@ -19,7 +19,7 @@ export const Hero = () => {
       <div className="absolute inset-0 flex flex-col items-center justify-center text-[#f9f8f7] gap-5 px-4">
         <div className="flex flex-col items-center gap-1 text-center">
           <h1 className="text-5xl font-bold uppercase tracking-wide max-md:text-3xl">
-            Jade Bailly
+            Focus par Jade
           </h1>
           <p className="text-lg max-md:text-sm">
             Immortalisez et gardez un souvenir de vos moments précieux !

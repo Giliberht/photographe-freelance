@@ -39,7 +39,7 @@ export const Navbar = () => {
       <div className="flex flex-wrap items-center justify-between mx-auto p-3 py-2 max-w-6xl">
         <h1 className="text-2xl font-mono ml-2 flex flex-col">
           <Link href="/" className="link-underline link-underline-black">
-            Jade Bailly
+            Focus par Jade
           </Link>
         </h1>
         <div className="flex gap-6">

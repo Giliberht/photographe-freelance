@@ -12,7 +12,7 @@ export const Footer = () => {
         <div className="flex flex-col sm:flex-row gap-6 items-center justify-between mb-6">
           <Link href="/" className="flex items-center justify-between gap-4">
             <p className="text-primary/85 text-lg uppercase font-bold">
-              Jade Bailly · Photographe
+              Focus par Jade · Photographe
             </p>
           </Link>
           <div className="flex gap-3 ml-3">
@@ -51,19 +51,13 @@ export const Footer = () => {
           </div>
           <div className="flex text-sm flex-row items-center gap-8 max-sm:px-0.5">
             <Link
-              href="/"
+              href="/mention-legale"
               className="text-primary/85 transition-colors duration-300"
             >
               Mentions légales
             </Link>
             <Link
-              href="/"
-              className="text-primary/85 transition-colors duration-300"
-            >
-              Conditions générales
-            </Link>
-            <Link
-              href="/"
+              href="/politique-de-cookie"
               className="text-primary/85 transition-colors duration-300"
             >
               Politique de cookies

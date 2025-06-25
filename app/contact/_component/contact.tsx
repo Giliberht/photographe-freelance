@@ -87,7 +87,7 @@ const Contact = () => {
                   href="mailto:jadebailly.photographe@example.com"
                   className="text-[#aa4c4c] hover:underline"
                 >
-                  jadebailly.photographe@example.com
+                  focusparjade.photographe@example.com
                 </a>
               </p>
               <p>
@@ -105,7 +105,7 @@ const Contact = () => {
                   href="https://www.google.com/maps?q=82+rue+Example,+75056+Paris,+France"
                   className="text-[#aa4c4c] hover:underline"
                 >
-                  82 rue example, 75056 Paris, France
+                  82 rue exemple, 75056 Paris, France
                 </a>
               </p>
             </div>
@@ -261,8 +261,8 @@ const Contact = () => {
                 En soumettant ce formulaire, vous acceptez nos{" "}
                 <a href="/conditions" className="text-[#aa4c4c] underline">
                   conditions générales
-                </a>{" "}
-                et nos{" "}
+                </a>
+                et nos
                 <a href="/confidentialite" className="text-[#aa4c4c] underline">
                   politiques de confidentialité
                 </a>

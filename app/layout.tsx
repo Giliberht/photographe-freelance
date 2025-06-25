@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { Lato } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 import { PageTransition } from "./component/animation/PageTransition";
 import { Header } from "./component/header";
 import { Footer } from "./component/footer";
@@ -24,9 +25,9 @@ const LatoFont = Lato({
 
 // Metadata for SEO
 export const metadata: Metadata = {
-  title: "Jade Bailly | Photographe",
+  title: "Focus par Jade | Photographe",
   description:
-    "Découvrez le travail de Jade Bailly photographe spécialisé dans la photographie de mariage, de portraits, et bien plus encore. Contactez-moi pour vos séances photo!",
+    "Découvrez le travail de Jade photographe spécialisé dans la photographie de mariage, de portraits, et bien plus encore. Contactez-moi pour vos séances photo!",
 };
 
 export default function RootLayout({
@@ -40,10 +41,10 @@ export default function RootLayout({
         {/* Meta tags for SEO */}
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Jade Bailly | Photographe Freelance</title>
+        <title>Focus par Jade | Photographe Freelance</title>
         <meta
           name="description"
-          content="Découvrez le travail de Jade Bailly photographe spécialisé dans la photographie de mariage, de portraits, et bien plus encore. Contactez-moi pour vos séances photo!"
+          content="Découvrez le travail de Jade, photographe spécialisé dans la photographie de mariage, de portraits, et bien plus encore. Contactez-moi pour vos séances photo!"
         />
         <meta
           name="keywords"
@@ -51,14 +52,14 @@ export default function RootLayout({
         />
         <meta
           property="og:title"
-          content="Jade Bailly | Photographe Freelance"
+          content="Focus par Jade | Photographe Freelance"
         />
         <meta
           property="og:description"
           content="Découvrez le travail de votre photographe freelance..."
         />
-        <meta property="og:image" content="URL_de_votre_image" />
-        <meta property="og:url" content="URL_de_votre_site" />
+        <meta property="og:image" content="" />
+        <meta property="og:url" content="" />
       </head>
       <body
         className={cn(
@@ -74,6 +75,7 @@ export default function RootLayout({
           <Footer />
         </Section>
         <Toaster position="bottom-right" reverseOrder={false} />
+        <Analytics />
       </body>
     </html>
   );
