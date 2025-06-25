@@ -6,7 +6,7 @@ Un site web moderne et responsive pour photographe freelance, conçu pour offrir
 
 ## 🧾 Description
 
-Basé sur **Next.js** et **Tailwind CSS**, ce site utilise **JavaScript** et **TypeScript** pour offrir une interface fluide, intuitive et esthétique aux visiteurs et aux clients d’un photographe.  
+Basé sur **Next.js** et **Tailwind CSS**, ce site utilise **TypeScript** pour offrir une interface fluide, intuitive et esthétique aux visiteurs et aux clients d’un photographe.  
 La future gestion côté serveur sera assurée par **l’API Router de Next.js**, avec :
 
 - **Prisma** pour la gestion de la base de données clients

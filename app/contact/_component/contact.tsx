@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import { Section } from "../../component/section";
 import { Badge } from "@/components/ui/badge";
-import toast from "react-hot-toast";
 import { LinkedinIcon } from "../../component/icon/linkedinicon";
 import { FacebookIcon } from "../../component/icon/facebookIcon";
 import { InstaIcon } from "../../component/icon/instaIcon";
@@ -38,27 +37,6 @@ const Contact = () => {
     "Séances photo de grossesse",
     "Photographie de naissance",
   ];
-
-  const [submitStatus, setSubmitStatus] = useState("");
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    setSubmitStatus(
-      toast.success("Successfully toasted!", {
-        duration: 5000,
-      })
-    );
-    setFormData({
-      firstName: "",
-      lastName: "",
-      email: "",
-      phone: "",
-      service: "",
-      message: "",
-      referral: "",
-    });
-  };
 
   const handleChange = (
     e: React.ChangeEvent<
@@ -192,7 +170,7 @@ const Contact = () => {
             <hr className="w-[280px] mb-10" />
           </div>
           <div className="bg-white px-8 rounded-lg border border-black/10 shadow-md hover:shadow-lg transition-shadow duration-300 relative max-sm:w-[400px]">
-            <form className="py-8" onSubmit={handleSubmit}>
+            <form className="py-8">
               <div className="flex flex-col space-y-4">
                 <div className="flex max-sm:flex-col max-sm:gap-y-4 gap-x-8">
                   <input
