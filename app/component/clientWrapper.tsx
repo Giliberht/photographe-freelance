@@ -27,7 +27,7 @@ export default function ClientWrapper() {
   return (
     <>
       {consentGiven === null && (
-        <CookieBanner onConsentChange={handleConsentChange} />
+        <CookieBanner onConsentChangeAction={handleConsentChange} />
       )}
 
       {consentGiven === true && (
