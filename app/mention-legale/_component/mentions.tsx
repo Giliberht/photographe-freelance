@@ -110,10 +110,13 @@ export const Mentions = () => {
                   4. Cookies et données de navigation
                 </h3>
                 <p className="text-md leading-relaxed text-gray-700">
-                  Ce site utilise Vercel Analytics, un service d&apos;analyse
-                  anonyme permettant de suivre les performances du site (pages
-                  vues, trafic global). Aucune donnée personnelle n&apos;est
-                  collectée ni utilisée à des fins de profilage.
+                  Ce site utilise <strong>Vercel Analytics</strong>, un service
+                  d&apos;analyse anonyme qui permet de suivre les performances
+                  du site (pages vues, trafic global) sans déposer de cookies
+                  sur votre appareil.
+                  <br /> <br />
+                  Aucune donnée personnelle identifiable n&apos;est collectée ni
+                  utilisée à des fins de profilage.
                 </p>
               </div>
               <div className="flex flex-col gap-5 bg-white shadow-lg rounded-lg p-6 border border-gray-200 hover:shadow-lg transition-shadow duration-300">
@@ -167,11 +170,10 @@ export const Mentions = () => {
             </div>
             <p className="text-sm leading-relaxed text-gray-600 mt-8 ml-4">
               Les images sont utilisées conformément aux licences des
-              plateformes citées. <br />
-              Toute utilisation commerciale est interdite sans accord préalable.
-              Merci de consulter les conditions d&apos;utilisation de chaque
-              plateforme. <br />
-              Aucune image utilisée n&apos;est destinée à un usage commercial.
+              plateformes citées. Toute utilisation commerciale est interdite
+              sans accord préalable. Merci de consulter les conditions
+              d&apos;utilisation de chaque plateforme. Aucune image utilisée
+              n&apos;est destinée à un usage commercial.
             </p>
           </div>
         </div>

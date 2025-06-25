@@ -1,5 +1,5 @@
 import React from "react";
-import { Spacing } from "../../app/component/spacing";
+import { Spacing } from "../component/spacing";
 import { Politique } from "./_component/politique";
 import { Hero } from "./_component/hero";
 

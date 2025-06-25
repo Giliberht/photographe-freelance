@@ -8,7 +8,7 @@ import reviews from "@/lib/data/reviewsData";
 
 export const Reviews = () => {
   return (
-    <Section className="flex flex-col items-center justify-center gap-10 bg-gray-100 py-10 max-sm:px-5">
+    <Section className="flex flex-col items-center justify-center gap-10 bg-gray-100 py-10 max-sm:px-5 mx-auto">
       <div className="text-center mb-10 mt-8">
         <Badge variant={"outline"} className="mb-2">
           Reviews

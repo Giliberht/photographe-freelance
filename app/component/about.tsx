@@ -10,7 +10,7 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 export const About = () => {
   return (
-    <Section className="flex items-center justify-center max-w-6xl gap-10">
+    <Section className="flex items-center justify-center max-w-6xl mx-auto gap-10">
       <div className="w-1/4 h-1/4 mr-28 max-sm:hidden">
         <Image
           src={myface}

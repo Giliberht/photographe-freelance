@@ -58,10 +58,10 @@ export const Footer = () => {
               Mentions légales
             </Link>
             <Link
-              href="/politique-de-cookie"
+              href="/politique-de-donees"
               className=" hover:text-[#8e4b3b] transition ml-1"
             >
-              Politique de cookies
+              Politique de donées
             </Link>
           </div>
         </div>

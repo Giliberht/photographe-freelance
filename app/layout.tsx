@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { Lato } from "next/font/google";
 import "./globals.css";
-import { Analytics } from "@vercel/analytics/next";
 import { PageTransition } from "./component/animation/PageTransition";
 import { Header } from "./component/header";
 import { Footer } from "./component/footer";
@@ -10,6 +9,7 @@ import { Section } from "./component/section";
 import { Spacing } from "./component/spacing";
 import { cn } from "@/lib/utils";
 import { Toaster } from "react-hot-toast";
+import ClientWrapper from "./component/clientWrapper";
 
 const PoppinsFont = Poppins({
   subsets: ["latin"],
@@ -23,7 +23,6 @@ const LatoFont = Lato({
   variable: "--font-body",
 });
 
-// Metadata for SEO
 export const metadata: Metadata = {
   title: "Focus par Jade | Photographe",
   description:
@@ -38,7 +37,6 @@ export default function RootLayout({
   return (
     <html lang="fr" className="h-full">
       <head>
-        {/* Meta tags for SEO */}
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Focus par Jade | Photographe Freelance</title>
@@ -75,7 +73,7 @@ export default function RootLayout({
           <Footer />
         </Section>
         <Toaster position="bottom-right" reverseOrder={false} />
-        <Analytics />
+        <ClientWrapper />
       </body>
     </html>
   );
