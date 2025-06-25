@@ -36,7 +36,7 @@ export const Service = () => {
         {seances.slice(0, 3).map((service, index) => (
           <div
             key={index}
-            className="bg-white shadow-md rounded-lg border border-black/10 hover:shadow-lg p-4 flex flex-col items-start"
+            className="bg-white shadow-md rounded-lg border border-black/10 hover:shadow-lg p-4 flex flex-col items-start hover:scale-102"
           >
             <h4 className="text-xl font-semibold mb-2">{service.title}</h4>
             <p className="text-sm leading-relaxed mb-2">
@@ -65,7 +65,7 @@ export const Service = () => {
             <CarouselItem key={index}>
               <div
                 key={index}
-                className="bg-white shadow-md rounded-lg border border-black/10 hover:shadow-lg p-4 flex flex-col items-start"
+                className="bg-white scaled-102 rounded-lg border border-black/10 shadow-md hover:shadow-lg p-4 flex flex-col items-start"
               >
                 <h4 className="text-xl font-semibold mb-2">{service.title}</h4>
                 <p className="text-sm leading-relaxed mb-2">

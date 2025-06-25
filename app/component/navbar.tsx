@@ -36,7 +36,7 @@ export const Navbar = () => {
         scrolling ? "shadow-lg" : ""
       }`}
     >
-      <div className="flex flex-wrap items-center justify-between mx-auto p-3 py-2 max-w-6xl">
+      <div className="flex flex-wrap items-center justify-around sm:justify-between mx-auto p-3 py-2 max-w-6xl">
         <h1 className="text-2xl font-mono ml-2 flex flex-col">
           <Link href="/" className="link-underline link-underline-black">
             Focus par Jade
@@ -58,7 +58,7 @@ export const Navbar = () => {
           </ul>
           <div
             onClick={() => setNav(!nav)}
-            className="cursor-pointer pl-40 z-10 text-primary md:hidden"
+            className="cursor-pointer pl-30 z-10 text-primary md:hidden"
           >
             {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
           </div>

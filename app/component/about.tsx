@@ -19,8 +19,8 @@ export const About = () => {
         />
       </div>
 
-      <div className="flex flex-col max-sm:px-5">
-        <div className="flex flex-col items-start  gap-5">
+      <div className="flex flex-col items-center justify-center px-5">
+        <div className="flex flex-col items-start gap-5">
           <div className="mb-2 ">
             <Badge variant={"outline"} className="mb-2">
               About

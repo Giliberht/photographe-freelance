@@ -36,7 +36,7 @@ export const Service = () => {
         {seances.slice(0, 3).map((service, index) => (
           <div
             key={index}
-            className="bg-white rounded-lg border border-black/10 hover:shadow-lg hover:scale-105 transition-transform ease-in-out p-4 flex flex-col items-start"
+            className="bg-white rounded-lg border border-black/10 shadow-md hover:shadow-lg hover:scale-102 transition-transform ease-in-out p-4 flex flex-col items-start"
           >
             <h4 className="text-xl font-semibold mb-2">{service.title}</h4>
             <p className="text-sm leading-relaxed mb-2">

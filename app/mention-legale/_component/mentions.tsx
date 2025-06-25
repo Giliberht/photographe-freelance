@@ -17,7 +17,7 @@ export const Mentions = () => {
       <Badge variant={"outline"} className="mb-2">
         Legal notice
       </Badge>
-      <h1 className="font-caption font-bold mb-1 text-5xl sm:text-5xl">
+      <h1 className="font-caption font-bold mb-1 text-4xl sm:text-5xl">
         Mentions légales
       </h1>
       <p className="text-[#aa5949] mb-8 text-xs">
@@ -27,14 +27,14 @@ export const Mentions = () => {
         Ce site a été conçu à des fins de démonstration uniquement. Aucune
         prestation réelle de photographie n&apos;est proposée via ce site.
       </p>
-      <div className="flex flex-col items-start max-w-6xl mx-2">
+      <div className="flex flex-col items-center sm:items-start max-w-6xl mx-2">
         <Badge variant={"outline"} className="mb-2 mt-12">
           Legal Information
         </Badge>
         <h2 className="flex items-center mt-2 mb-5 text-3xl text-center tracking-tight text-gray-900">
           Identité et cadre du site
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-8 gap-10 max-w-6xl">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-4 gap-10 max-w-6xl items-center">
           <div className="flex flex-col gap-5 bg-white shadow-lg rounded-lg p-6 border border-gray-200 hover:shadow-lg transition-shadow duration-300">
             <h3 className="flex items-center text-xl font-semibold text-gray-800">
               <Info className="w-6 h-6 mr-5 text-[#aa5949]" />
@@ -95,15 +95,15 @@ export const Mentions = () => {
             </ul>
           </div>
         </div>
-        <div className="bg-gray-100 rounded-md shadow-md py-16 mt-20">
-          <div className="px-4 m-2">
+        <div className="bg-gray-100 rounded-md shadow-md py-10 mt-20">
+          <div className="px-4 m-2 flex flex-col items-center sm:items-start">
             <Badge variant={"outline"} className="mb-2">
               Cookies & Data
             </Badge>
             <h2 className="flex items-center mt-2 mb-5 text-3xl text-center tracking-tight text-gray-900">
               Gestion des données et contenus
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 mt-8 gap-10 max-w-6xl ">
+            <div className="grid grid-cols-1 sm:grid-cols-2 mt-4 gap-10 max-w-6xl ">
               <div className="flex flex-col gap-5 bg-white shadow-lg rounded-lg p-6 border border-gray-200 hover:shadow-lg transition-shadow duration-300">
                 <h3 className="flex items-center text-xl font-semibold text-gray-800">
                   <Cookie className="w-6 h-6 mr-5 text-[#aa5949]" />
@@ -175,13 +175,13 @@ export const Mentions = () => {
             </p>
           </div>
         </div>
-        <Badge variant={"outline"} className="mb-2 mt-20">
+        <Badge variant={"outline"} className="mb-2 mt-24">
           Property & Legality
         </Badge>
         <h2 className="flex items-center mt-2 mb-5 text-3xl text-center tracking-tight text-gray-900">
           Propriété & légalité
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 mt-8 gap-10 max-w-6xl">
+        <div className="grid grid-cols-1 sm:grid-cols-2 mt-4 gap-10 max-w-6xl">
           <div className="flex flex-col gap-5 bg-white shadow-lg rounded-lg p-6 border border-gray-200 hover:shadow-lg transition-shadow duration-300">
             <h3 className="flex items-center text-xl font-semibold text-gray-800">
               <Copyright className="w-6 h-6 mr-5 text-[#aa5949]" />

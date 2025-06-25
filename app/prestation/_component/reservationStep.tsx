@@ -17,7 +17,7 @@ const ProcessusReservation = () => {
           {steps.map((step, index) => (
             <div
               key={index}
-              className="flex flex-col w-[275px] items-center p-6 bg-white shadow-md rounded-lg border border-black/10 hover:shadow-md"
+              className="flex flex-col w-[275px] items-center p-6 bg-white shadow-md hover:scale-102 rounded-lg border border-black/10 hover:shadow-lg"
             >
               <FontAwesomeIcon
                 icon={step.icon}

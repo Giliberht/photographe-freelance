@@ -17,7 +17,7 @@ const ProcessusSeance = () => {
           {steps.map((step, index) => (
             <div
               key={index}
-              className="flex flex-col w-[275px] items-center p-6 bg-white shadow-md rounded-lg border border-black/10 hover:shadow-md"
+              className="flex flex-col w-[275px] items-center p-6 bg-white rounded-lg border border-black/10 shadow-md hover:shadow-lg hover:scale-102"
             >
               <FontAwesomeIcon
                 icon={step.icon}

@@ -115,7 +115,7 @@ export default function Services() {
               .map((service, index) => (
                 <div
                   key={index}
-                  className="bg-white shadow-md rounded-lg border border-black/10 hover:shadow-lg p-4 flex flex-col items-start"
+                  className="bg-white shadow-md rounded-lg border border-black/10 hover:shadow-lg hover:scale-102 p-4 flex flex-col items-start"
                 >
                   <h4 className="text-xl font-semibold mb-2">
                     {service.title}
