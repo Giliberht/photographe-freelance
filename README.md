@@ -1,6 +1,6 @@
 # 📸 Portfolio Photographe Freelance avec Espace Client (Next.js)
 
-Un site web moderne et responsive pour photographe freelance, conçu pour offrir une vitrine élégante de son travail et accueillir à terme un espace client sécurisé.
+Un site web moderne pour photographe freelance, conçu pour offrir une vitrine élégante de son travail et accueillir à terme un espace client sécurisé.
 
 ---
 
